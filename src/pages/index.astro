@@ -1,17 +1,43 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Mark Kvetny">
+  <div class="max-w-3xl py-16 px-6 mx-auto h-full">
+    <h1
+      class="text-taupe-800 text-5xl md:text-6xl lg:text-7xl font-display font-black"
+    >
+      Mark Kvetny
+    </h1>
+    <p class="paragraph mt-6">
+      <span class="em"> Software Engineer</span> with a focus on Web Technologies
+      and crafting User Interfaces. Currently working as a Fullstack Engineer at
+      <a href="https://coherentdigital.net/" class="link">Coherent Digital</a>.
+    </p>
+    <p class="paragraph mt-2">
+      Find my work on
+      <a href="https://github.com/biowaffeln" class="link">github</a>, connect
+      with me on
+      <a href="https://bsky.app/profile/kvetny.dev" class="link">bluesky</a>, or
+      reach out via
+      <a href="mailto:mark@kvetny.dev" class="link">mail</a>.
+    </p>
+  </div>
+  <style>
+    @reference "../styles/global.css";
+
+    .paragraph {
+      @apply text-taupe-600 text-lg max-w-2xl;
+
+      .em {
+        font-weight: 450;
+        @apply text-taupe-950;
+      }
+
+      .link {
+        font-weight: 430;
+        @apply text-taupe-900 underline decoration-taupe-300 underline-offset-3 hover:decoration-taupe-400 transition;
+      }
+    }
+  </style>
+</BaseLayout>

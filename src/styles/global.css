@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+html,
+body {
+  height: 100vh;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-migra);
+  --font-mono: var(--font-jetbrains-mono);
+}

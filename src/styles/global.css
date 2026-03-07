@@ -4,7 +4,6 @@ html,
 body {
   height: 100vh;
   overflow: scroll;
-  overscroll-behavior: contain;
 }
 
 @theme inline {

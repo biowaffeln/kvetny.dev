@@ -3,9 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Mark Kvetny">
-  <div class="max-w-3xl py-16 px-6 mx-auto h-full">
+  <div class="max-w-3xl py-16 px-6 mx-auto">
     <h1
-      class="text-taupe-800 text-5xl md:text-6xl lg:text-7xl font-display font-black"
+      class="text-taupe-900 text-5xl md:text-6xl lg:text-7xl font-display font-black"
     >
       Mark Kvetny
     </h1>
@@ -15,7 +15,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <a href="https://coherentdigital.net/" class="link">Coherent Digital</a>.
     </p>
     <p class="paragraph mt-2">
-      Find my work on
+      You can find my work on
       <a href="https://github.com/biowaffeln" class="link">github</a>, connect
       with me on
       <a href="https://bsky.app/profile/kvetny.dev" class="link">bluesky</a>, or
@@ -27,7 +27,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     @reference "../styles/global.css";
 
     .paragraph {
-      @apply text-taupe-600 text-lg max-w-2xl;
+      @apply text-taupe-600 text-lg lg:text-xl;
 
       .em {
         font-weight: 450;
